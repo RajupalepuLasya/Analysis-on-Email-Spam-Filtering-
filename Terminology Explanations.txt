@@ -1,0 +1,26 @@
+Logistic Regression:
+
+In our analysis we have a dependent and independent valriables. So, we can have linear regression as one of the prediction model.But the dependent variable in our case is categorical. So it would be better if we choose logistice regression.
+
+
+CART Model:
+
+Classification and Regression Trees or CART for short is a term introduced by Leo Breiman to refer to Decision Tree algorithms that can be used for classification or regression predictive modeling problems. Creating a CART model involves selecting input variables and split points on those variables until a suitable tree is constructed.
+
+Random Forest:
+
+Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean/average prediction (regression) of the individual trees.
+
+"Corpus" is a collection of text documents.
+
+VCorpus in tm refers to "Volatile" corpus which means that the corpus is stored in memory and would be destroyed when the R object containing it is destroyed.
+
+Contrast this with PCorpus or Permanent Corpus which are stored outside the memory say in a db.
+
+In order to create a VCorpus using tm, we need to pass a "Source" object as a paramter to the VCorpus method. You can find the sources available using this method -
+getSources()
+
+[1] "DataframeSource" "DirSource" "URISource" "VectorSource"
+[5] "XMLSource" "ZipSource"
+
+Source abstracts input locations, like a directory , or a URI etc. VectorSource is for only character vectors
